@@ -174,5 +174,5 @@ rect.point = { x: 20, y: 40 };
 console.log(rect); // { x: 20, y: 40, width: 200, height: 300 }
 ```
 
-
+请注意，在需要的时候，点会被动态转化为尺寸，反之亦然：
 
