@@ -35,7 +35,7 @@ Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 * 可以查看并控制任何项目的精确边界框，支持的不同笔划端和斜接限制的复杂笔划样式。 
 * 平滑曲线，并通过点拟合曲线来简化路径段。
 * 模拟当前Canvas对象缺少的虚线笔划，接近原生绘图速度。
-* 通过 JavaScript 的模拟支持 Illustrator 和 Photoshop 中的大多数混合模式：正片叠底，滤色，叠加，柔光，强光，颜色减淡，颜色燃烧，变暗，变亮，差异，排斥，色调，饱和度，亮度， 颜色，加，减，平均和否定。multiply, screen, overlay, soft-light, hard-light, color-dodge, color-burn, darken, lighten, difference, exclusion, hue, saturation, luminosity, color, add, subtract, average & negation.
+* 通过 JavaScript 的模拟支持 Illustrator 和 Photoshop 中的大多数混合模式：正片叠底，滤色，叠加，柔光，强光，颜色减淡，颜色加深，变暗，变亮，差异，排斥，色调，饱和度，亮度， 颜色，加，减，平均和否定。multiply, screen, overlay, soft-light, hard-light, color-dodge, color-burn, darken, lighten, difference, exclusion, hue, saturation, luminosity, color, add, subtract, average & negation.
 
 Read our tutorials to learn more about the features of Paper.js.
 
