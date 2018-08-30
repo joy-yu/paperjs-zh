@@ -149,7 +149,7 @@ var point1 = new Point(10, 20);
 var point2 = point1 * 4;
 console.log(point2); // { x: 40, y: 80 }
 
-// Now we calculate the difference between the two.
+// 我们可以计算这两个点的差
 var point3 = point2 - point1;
 console.log(point3); // { x: 30, y: 60 }
 ```
