@@ -107,8 +107,8 @@ Paper.js提供了非常方便的方法来将矢量图形导入和导出为SVG。
 
 ```js
 var circle = new Path.Circle({
-	center: [160, 80],
-	radius: 50
+    center: [160, 80],
+    radius: 50
 });
 
 // 选择路径的第二个线段点
@@ -117,11 +117,11 @@ circle.segments[1].selected = true;
 // 选择路径的第三个线段点
 circle.segments[2].selected = true;
 
-// Create a circle path 140pt to the right:
+// 在第一个圆右边140像素位置创建一个圆
 var circle2 = new Path.Circle({
-	center: circle.position + [140, 0],
-	radius: 50,
-	fillColor: 'red'
+    center: circle.position + [140, 0],
+    radius: 50,
+    fillColor: 'red'
 });
 
 // Select it:
