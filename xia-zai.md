@@ -18,5 +18,11 @@ bower install paper
 
 # 开发构建
 
+有三种方法使用[开发分支](https://github.com/paperjs/paper.js/tree/develop)中的最新开发版本，前两种方法依赖于每次提交后的自动预构建：
+
+* 将 NPM 或 Bower 指向 [prebuilt/module](https://github.com/paperjs/paper.js/tree/prebuilt/module) 分支中的特定提交。
+* 从 [prebuilt/dist](https://github.com/paperjs/paper.js/tree/prebuilt/dist) 分支下载最新的打包ZIP文件。
+* 查看开发分支的最新版本，并按照README文件中的说明自行构建。
+
 
 
