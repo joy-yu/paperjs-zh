@@ -31,6 +31,8 @@ var secondPath = new Path.Circle({
 });
 ```
 
+在[文档层次结构](http://www.scriptographer.org/tutorials/document-items/document-hierarchy/)教程中了解更多有关文档对象模型的信息。
+
 # 路径和线段
 
 # 鼠标互动
