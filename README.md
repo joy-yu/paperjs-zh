@@ -31,7 +31,7 @@ Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 * 精心设计并经过千锤百炼的API。
 * PaperScript，是 JavaScript 的扩展，允许脚本的局部作用域执行而不会污染全局作用域，共享同一个库的代码时，每个页面的多个脚本可以在它单独的作用域内执行，并添加了对任意对象的运算符重载支持。
 * 很好地解释了矢量图形中的矢量。Paper.js 将矢量数学视为一等公民，它通过其核心类型（如Point、Size和Rectangle）尽可能简单地处理矢量和几何图形。PaperScript 进一步简化了对 Point 和 Size 对象的操作，可以使用常规的运算符语法在这些对象上进行直接的数学运算，就像它们是纯数字一样。
-* Construct paths and manipulate their curves and segments in very convenient and fine-grained ways.
+* 构建路径并以非常方便和精细的方式控制它们的曲线\(curves\)和段\(segments\)。
 * Inspect and manipulate the precise bounding box of any item, supporting complicated stroke styles with different stroke ends and miter limits.
 * Smoothen curves, and simplify path segments by fitting curves through points.
 * Simulate dashed strokes which are currently lacking from the Canvas object, at near native drawing speed.
