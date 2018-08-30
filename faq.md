@@ -12,3 +12,7 @@
 
 2012年11月，paper.js 实现了 SVG 的导入和导出。查看 [project.importSVG\(svg\)](http://paperjs.org/reference/project#importsvg-svg)，[item.importSVG\(svg\)](http://paperjs.org/reference/item#importsvg-svg) / [project.exportSVG\(\)](http://paperjs.org/reference/project#exportsvg)，[item.exportSVG\(\)](http://paperjs.org/reference/item#exportsvg)。在未来，我们可能以额外的库，来有望实现PDF导出。
 
+## 会因为许多变量污染掉全局变量吗？
+
+
+
