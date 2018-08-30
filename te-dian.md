@@ -176,3 +176,14 @@ console.log(rect); // { x: 20, y: 40, width: 200, height: 300 }
 
 请注意，在需要的时候，点会被动态转化为尺寸，反之亦然：
 
+```js
+var rect = new Rectangle();
+rect.point = { width: 100, height: 200 };
+console.log(rect); // { x: 100, y: 200, width: 0, height: 0 }
+
+rect.size = { x: 200, y: 400 };
+console.log(rect); // { x: 100, y: 200, width: 200, height: 400 }
+```
+
+
+
