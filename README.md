@@ -1,3 +1,6 @@
-# My Awesome Book
+# 关于
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Paper.js — 矢量图形的脚本的瑞士军刀。
+
+Paper.js是一个开源的基于HTML5 Canvas运行的矢量图形脚本框架。 它提供了一种清晰的场景图/DOM，和许多强大的功能来创建和使用矢量图形和贝塞尔曲线，所有这些都巧妙地包含在一个设计良好，一致和干净的编程界面中。
+
