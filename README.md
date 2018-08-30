@@ -30,7 +30,7 @@ Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 * 图形项目的处理和绘制是自动的并且经过优化，你可以构建或修改你的项目和样式，并将绘图命令交给Paper.js处理。
 * 精心设计并经过千锤百炼的API。
 * PaperScript，是 JavaScript 的扩展，允许脚本的局部作用域执行而不会污染全局作用域，共享同一个库的代码时，每个页面的多个脚本可以在它单独的作用域内执行，并添加了对任意对象的运算符重载支持。
-* There is a good reason for the word Vector in Vector Graphics. Paper.js treats Vector Mathematics as a first class citizen by making working with vectors and geometries as simple as possible through its core types such as Point, Size and Rectangle. The manipulation of Point and Size objects is further simplified in PaperScript, where direct math operations using normal operator syntax are possible on such objects as if they were plain numbers.
+* 很好地解释了矢量图形中的矢量。Paper.js 将矢量数学视为一等公民，它通过其核心类型（如Point、Size和Rectangle）尽可能简单地处理矢量和几何图形。 The manipulation of Point and Size objects is further simplified in PaperScript, where direct math operations using normal operator syntax are possible on such objects as if they were plain numbers.
 * Construct paths and manipulate their curves and segments in very convenient and fine-grained ways.
 * Inspect and manipulate the precise bounding box of any item, supporting complicated stroke styles with different stroke ends and miter limits.
 * Smoothen curves, and simplify path segments by fitting curves through points.
