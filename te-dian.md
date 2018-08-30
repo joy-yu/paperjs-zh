@@ -138,6 +138,8 @@ Vector几何是 Paper.js 中的一等公民。 在学习编写脚本的同时，
 
 # 数学运算
 
+在 PaperScript 中你可以编写与基本类型对象相关的常规代数运算符。 Points 和 Sizes 可以和数值或其他 Points 和 Sizes 相加减乘数：
+
 # 对象转换
 
 
