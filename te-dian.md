@@ -134,6 +134,8 @@ Vector几何是 Paper.js 中的一等公民。 在学习编写脚本的同时，
 
 在构建 [Scriptographer](http://scriptographer.org/) 时，我们发现矢量几何是一种处理位置、运动和路径的强大方法。一旦理解它，你会发现它比直接使用坐标系的x值和y值更加直观和灵活，就像那些视觉导向的编程环境那样。
 
+在[矢量几何](http://www.scriptographer.org/tutorials/geometry/vector-geometry/)教程中可以了解更多有关内容。
+
 # 数学运算
 
 # 对象转换
