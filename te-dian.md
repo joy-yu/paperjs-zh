@@ -39,7 +39,7 @@ Paper.js 可以非常轻松地创建路径并为其添加线段。 添加后，�
 
 Paper.js中，路径由一系列由曲线连接的线段表示。 一个线段由一个点和两个柄组成，定义了曲线的位置和方向。
 
-[使用路径项目](http://www.scriptographer.org/tutorials/paths/working-with-path-items/)教程可以了解更多有关路径和段的详细信息。
+[使用路径项目](http://www.scriptographer.org/tutorials/paths/working-with-path-items/)教程可以了解更多有关路径和段的信息。
 
 # 鼠标互动
 
