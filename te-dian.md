@@ -67,9 +67,7 @@ function onMouseUp(event) {
 
 Paper.js 你可以通过两种方式与键盘交互：监听按键事件并响应这些事件，或随时检查给定按键的状态，以检查是否按下了键。
 
-在[键盘互动](http://paperjs.org/tutorials/interaction/keyboard-interaction/)教程中可以了解更多有关鼠标处理程序的内容。
-
-
+在[键盘互动](http://paperjs.org/tutorials/interaction/keyboard-interaction/)教程中可以了解更多有关键盘互动的内容。
 
 # SVG 导入/导出
 
