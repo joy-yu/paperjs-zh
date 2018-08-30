@@ -61,7 +61,7 @@ function onMouseUp(event) {
 }
 ```
 
-传递给事件处理程序的事件对象包括许多描述鼠标移动和位置的方便属性。 在Mouse Events教程中了解有关鼠标事件的更多信息。
+传递给事件处理程序的事件对象包括许多描述鼠标移动和位置的方便属性。 在[鼠标事件](http://scriptographer.org/tutorials/interaction/mouse-tool-events/)教程中可以了解更多有关鼠标事件的内容。
 
 # 键盘互动
 
