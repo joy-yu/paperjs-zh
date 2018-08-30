@@ -10,5 +10,5 @@
 
 ### 如何导出为矢量图形？
 
-2012年11月，paper.js 实现了 SVG 的导入和导出。
+2012年11月，paper.js 实现了 SVG 的导入和导出。See [project.importSVG\(svg\)](http://paperjs.org/reference/project#importsvg-svg)，[item.importSVG\(svg\)](http://paperjs.org/reference/item#importsvg-svg) / [project.exportSVG\(\)](http://paperjs.org/reference/project#exportsvg)，[item.exportSVG\(\)](http://paperjs.org/reference/item#exportsvg)。
 
