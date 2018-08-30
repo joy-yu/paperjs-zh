@@ -49,15 +49,15 @@ Paper.js 可以为通过鼠标（或触摸屏）产生的不同行为提供鼠�
 
 ```js
 function onMouseDown(event) {
-	// 当用户按下鼠标时执行代码
+    // 当用户按下鼠标时执行代码
 }
 
 function onMouseDrag(event) {
-	// 当用户拖拽鼠标时执行代码
+    // 当用户拖拽鼠标时执行代码
 }
 
 function onMouseUp(event) {
-	// 当用户鼠标释放时执行代码
+    // 当用户鼠标释放时执行代码
 }
 ```
 
