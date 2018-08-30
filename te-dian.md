@@ -117,7 +117,7 @@ circle.segments[1].selected = true;
 // 选择路径的第三个线段点
 circle.segments[2].selected = true;
 
-// 在第一个圆右边140像素位置创建一个圆
+// 在第一个圆右边140像素位置创建第二个圆
 var circle2 = new Path.Circle({
     center: circle.position + [140, 0],
     radius: 50,
