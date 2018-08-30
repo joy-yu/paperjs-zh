@@ -22,7 +22,7 @@ Paper.js是一个年轻的库，但会计划提供更多功能。 虽然很多�
 * 通过 JSON 和 ExtendScript 直接从 Adobe Illustrator 导入图形。
 * 使用 SVG 字体排版，支持高级排版功能，比如在图形形状和路径沿边键入文字，可控制文本子范围的样式。
 * PDF 导入/导出。
-* Running Paper.js apps stand-alone through a native, hardware accelerated Runtime that embeds a JavaScript engine.
+* 通过一种嵌入 Javascript 引擎的原生的支持硬件加速的运行环境，独立运行的 Paper.js 应用。
 
 
 
