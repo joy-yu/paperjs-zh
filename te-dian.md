@@ -165,11 +165,11 @@ Paper.js 的一个重要特性就是：将值传递给函数时可以进行灵�
 var rect = new Rectangle({ x: 10, y: 20, width: 100, height: 200 });
 console.log(rect); // { x: 10, y: 20, width: 100, height: 200 }
 
-// Define the size as an array containing [width, height]:
+// 以数组形式定义尺寸 [width, height]
 rect.size = [200, 300];
 console.log(rect); // { x: 10, y: 20, width: 200, height: 300 }
 
-// Change its point to a new one described by a JS object:
+// 从 JS 对象改变矩形的点位置
 rect.point = { x: 20, y: 40 };
 console.log(rect); // { x: 20, y: 40, width: 200, height: 300 }
 ```
