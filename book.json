@@ -1,0 +1,39 @@
+{
+    "author": "joy-yu <775154773@qq.com>",
+    "description": "Paper.js 中文翻译",
+    "extension": null,
+    "generator": "site",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        }
+    },
+    "plugins": [
+        "splitter"
+    ],
+    "title": "Paper.js 中文文档",
+    "variables": {}
+}
