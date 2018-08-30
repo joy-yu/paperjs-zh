@@ -124,7 +124,7 @@ var circle2 = new Path.Circle({
     fillColor: 'red'
 });
 
-// Select it:
+// 选择第二个圆
 circle2.selected = true;
 ```
 
