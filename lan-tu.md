@@ -6,7 +6,7 @@ Paper.js是一个年轻的库，但会计划提供更多功能。 虽然很多�
 
 * SVG 导入/导出。
 * 持久化的 JSON 数据格式。
-* 使用贝塞尔粗线剪裁的快速的[路径交叉点](http://scriptographer.org/tutorials/paths/geometric-tests/#finding-path-intersections)。
+* 使用贝塞尔粗线剪裁技术快速获取[路径交叉点](http://scriptographer.org/tutorials/paths/geometric-tests/#finding-path-intersections)。
 * Boolean geometric path operations, such as union, intersection, exclusion, etc.
 * Hit Test graphic items and add mouse event handlers to them, for simple and powerful interactivity.
 * Running Paper.js in Node.js.
