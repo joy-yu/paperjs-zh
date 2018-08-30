@@ -17,7 +17,7 @@ Paper.js是一个年轻的库，但会计划提供更多功能。 虽然很多�
 
 # 计划
 
-* 可参数化的路径偏移/笔划，将笔划扩展到轮廓，可以轻松选择各种表现笔划。Parametrizable path offsetting / stroking, to expand strokes to outlines and optionally produce all kinds of expressive strokes easily.
+* 可参数化的路径偏移/笔划，将笔划扩展到轮廓，可轻松选择各种笔划表现。
 * Selectors similar to CSS for matching items in your Paper.js document.
 * Direct importing of drawings from Adobe Illustrator through JSON and ExtendScript.
 * Typography using SVG fonts, with support for advanced typographic features such as type inside graphic shapes and along paths, with control over styles of sub-ranges of text.
