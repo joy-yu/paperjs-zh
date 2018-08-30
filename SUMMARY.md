@@ -5,6 +5,7 @@
   * [蓝图](lan-tu.md)
 * [特点](te-dian.md)
 * [教程](jiao-cheng.md)
+  * [入门](jiao-cheng/ru-men.md)
 * [引用](yin-yong.md)
 * [下载](xia-zai.md)
 
