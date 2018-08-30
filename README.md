@@ -39,3 +39,11 @@ Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 
 Read our tutorials to learn more about the features of Paper.js.
 
+
+
+# 浏览器支持
+
+Paper.js 主要面向支持Canvas对象和EcmaScript 5的现代浏览器。尽管理论上可以编写代码来支持旧版浏览器（IE8及以下版本，我们期待你的加入！），我们目前不支持那些旧浏览器，让我们继续前进吧！
+
+
+
