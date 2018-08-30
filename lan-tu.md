@@ -19,7 +19,7 @@ Paper.js是一个年轻的库，但会计划提供更多功能。 虽然很多�
 
 * 可参数化的路径偏移/笔划，将笔划扩展到轮廓，可轻松选择各种笔划表现。
 * 与 CSS 类似的选择器，用于匹配 Paper.js 文档中的物体。
-* Direct importing of drawings from Adobe Illustrator through JSON and ExtendScript.
+* 通过 JSON 和 ExtendScript 直接从 Adobe Illustrator 导入图形。
 * Typography using SVG fonts, with support for advanced typographic features such as type inside graphic shapes and along paths, with control over styles of sub-ranges of text.
 * PDF importing / exporting.
 * Running Paper.js apps stand-alone through a native, hardware accelerated Runtime that embeds a JavaScript engine.
