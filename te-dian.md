@@ -140,6 +140,20 @@ Vector几何是 Paper.js 中的一等公民。 在学习编写脚本的同时，
 
 在 PaperScript 中你可以编写与基本类型对象相关的常规代数运算符。 Points 和 Sizes 可以和数值或其他 Points 和 Sizes 相加减乘数：
 
+```js
+// 定义一个点1
+var point1 = new Point(10, 20);
+
+// 创建第二点，是第一个点的4倍
+// 这和创建一个新的点，x值和y值是第一个点4倍一样
+var point2 = point1 * 4;
+console.log(point2); // { x: 40, y: 80 }
+
+// Now we calculate the difference between the two.
+var point3 = point2 - point1;
+console.log(point3); // { x: 30, y: 60 }
+```
+
 # 对象转换
 
 
