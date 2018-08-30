@@ -12,6 +12,25 @@ Paper.js 提供了一种非常容易使用的文档对象模型（也称为场�
 
 上边的图像是执行下面代码后项目结构的图示，你可以在 Adobe Illustrator 这样的应用程序中看到。 它有两层，红色路径在第一层中创建，绿色路径在第二层中创建。
 
+```js
+// 创建一个圆形路径，它自动放置在项目的活动层中
+var path = new Path.Circle({
+	center: [80, 50],
+	radius: 35,
+	fillColor: 'red'
+});
+
+// Create a new layer and activate it:
+var secondLayer = new Layer();
+
+// The second path is added as a child of the second layer:
+var secondPath = new Path.Circle({
+	center: [120, 50],
+	radius: 35,
+	fillColor: '#00FF00'
+});
+```
+
 # 路径和线段
 
 # 鼠标互动
