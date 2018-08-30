@@ -22,7 +22,7 @@ bower install paper
 
 * 将 NPM 或 Bower 指向 [prebuilt/module](https://github.com/paperjs/paper.js/tree/prebuilt/module) 分支中的特定提交。
 * 从 [prebuilt/dist](https://github.com/paperjs/paper.js/tree/prebuilt/dist) 分支下载最新的打包ZIP文件。
-* 查看开发分支的最新版本，并按照README文件中的说明自行构建。
+* 查看[开发分支](https://github.com/paperjs/paper.js/tree/develop)的最新版本，并按照README文件中的说明自行构建。
 
 
 
