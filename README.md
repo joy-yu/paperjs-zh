@@ -12,5 +12,5 @@ Paper.js 基于 [Scriptographer](http://scriptographer.org/)，并且很大程�
 
 Paper.js 简单易学，适合初学者，对许多中高级用户的学习也有很多帮助。
 
-Paper.js 由[Jürg Lehni](http://lehni.org/) 和 [Jonathan Puckey](http://jonathanpuckey.com/) 开发，发布遵从[MIT协议](http://paperjs.org/license/)。
+Paper.js 由 [Jürg Lehni](http://lehni.org/) 和 [Jonathan Puckey](http://jonathanpuckey.com/) 开发完成，发布遵从[MIT协议](http://paperjs.org/license/)。
 
