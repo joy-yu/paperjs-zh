@@ -3,7 +3,7 @@
 * [关于](README.md)
   * [常见问题](faq.md)
   * [蓝图](lan-tu.md)
-* 特点
+* [特点](te-dian.md)
 * 教程
 * 引用
 * 下载
