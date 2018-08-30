@@ -26,7 +26,7 @@ Paper.js 由 [Jürg Lehni](http://lehni.org/) 和 [Jonathan Puckey](http://jonat
 
 Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 
-* A Scene Graph / Document Object Model for vector graphics: Work with nested layers, groups, paths, compound paths, rasters, symbols etc.
+* 矢量图形的场景图/DOM：使用嵌套图层\(nested layers\)、组\(groups\)、路径\(paths\)、复合路径\(compound paths\)、 栅格\(rasters\)、 标记\(symbols\)等等。
 * The handling and drawing of these graphic items is automatic and optimised, allowing you to construct or modify your items and styles and leave the drawing commands to Paper.js.
 * A well designed and battle hardened Application Programming Interface \(API\).
 * PaperScript, a simple extension of JavaScript, allowing the scoped execution of scripts without polluting the global scope, the execution of multiple scripts per page in their separate sand-boxed scopes while sharing the library code, and adding support for operator overloading to any object.
