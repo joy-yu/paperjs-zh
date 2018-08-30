@@ -71,14 +71,13 @@ Paper.js 你可以通过两种方式与键盘交互：监听按键事件并响�
 
 ```js
 function onKeyDown(event) {
-	// 当用户按下某一个键时执行代码
+    // 当用户按下某一个键时执行代码
 }
 
 function onMouseDrag(event) {
-	if (Key.isDown('space')) {
-		// Do something if the space bar is pressed
-		// while dragging:
-	}
+    if (Key.isDown('space')) {
+        // 鼠标拖拽时，当空格键按下时，执行代码
+    }
 }
 ```
 
