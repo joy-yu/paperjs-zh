@@ -160,3 +160,19 @@ console.log(point3); // { x: 30, y: 60 }
 
 Paper.js 的一个重要特性就是：将值传递给函数时可以进行灵活的参数转换。 在这些情况下，所有基本类型也可以描述为数组或纯 JavaScript 对象。 数组只是一系列标准序列中的默认属性。
 
+```js
+// 从 JS 对象创建一个矩形
+var rect = new Rectangle({ x: 10, y: 20, width: 100, height: 200 });
+console.log(rect); // { x: 10, y: 20, width: 100, height: 200 }
+
+// Define the size as an array containing [width, height]:
+rect.size = [200, 300];
+console.log(rect); // { x: 10, y: 20, width: 200, height: 300 }
+
+// Change its point to a new one described by a JS object:
+rect.point = { x: 20, y: 40 };
+console.log(rect); // { x: 20, y: 40, width: 200, height: 300 }
+```
+
+
+
