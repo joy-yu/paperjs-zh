@@ -85,6 +85,12 @@ function onMouseDrag(event) {
 
 # SVG 导入/导出
 
+Paper.js提供了非常方便的方法来将矢量图形导入和导出为SVG。 更支持更高级的功能，如渐变和剪裁。
+
+左侧是原始SVG，导入到右侧的 Paper.js 画布中：
+
+这个交互式 Voronoi 示例好玩吧，单击可以添加新的单位，如果达到你喜欢的结果，你可以按下载为SVG按钮将结果下载为SVG文件，您可以直接在 Adobe Illustrator 和其他矢量编辑应用程序中打开该文件：
+
 # 光栅图像和颜色平均
 
 # 标记
