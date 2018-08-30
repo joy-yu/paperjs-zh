@@ -14,5 +14,5 @@
 
 ## 会因为使用许多变量而污染全局变量吗？
 
-不用担心，所有 Paper.js 都在自己的作用域范围内编译并存放在全局 [paper](http://paperjs.org/reference/global#paper) 变量中。每个PaperScript 脚本都在自己的作用域范围内运行，执行时它们看上去是在全局作用域，但实际上是在 paper 对象。 如果您选择不使用 PaperScript 而更喜欢纯JavaScript，那么，你将失去通过简单的数学运算符，对 Point 和 Size 对象进行矢量数学运算的额外好处，并且您必须访问此纸质对象上的所有原型。 您可以选择通过调用paper.install（窗口）来污染全局范围，将所有Paper.js原型注入其中，并且无需通过纸质对象访问所有内容。
+不用担心，所有 Paper.js 都在自己的作用域范围内编译并存放在全局 [paper](http://paperjs.org/reference/global#paper) 变量中。每个PaperScript 脚本都在自己的作用域范围内运行，执行时它们看上去是在全局作用域，但实际上是在 paper 对象。 如果您选择不使用 PaperScript 而更喜欢纯JavaScript，那么，你将失去通过简单的数学运算符对 Point 和 Size 对象进行矢量数学运算的额外好处，并且您必须访问此纸质对象上的所有原型。 您可以选择通过调用paper.install（窗口）来污染全局范围，将所有Paper.js原型注入其中，并且无需通过纸质对象访问所有内容。
 
