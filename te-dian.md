@@ -154,6 +154,8 @@ var point3 = point2 - point1;
 console.log(point3); // { x: 30, y: 60 }
 ```
 
+在[数学运算](http://www.scriptographer.org/tutorials/geometry/mathematical-operations/)教程中可以了解更多相关内容。
+
 # 对象转换
 
 
