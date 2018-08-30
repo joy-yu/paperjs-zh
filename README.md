@@ -34,7 +34,7 @@ Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 * 可以构建路径并以非常方便和精细的方式控制它们的曲线\(curves\)和段\(segments\)。
 * 可以查看并控制任何项目的精确边界框，支持的不同笔划端和斜接限制的复杂笔划样式。 
 * 平滑曲线，并通过点拟合曲线来简化路径段。
-* 模拟当前Canvas对象缺少的虚线笔划，接近原生绘图速度。Simulate dashed strokes which are currently lacking from the Canvas object, at near native drawing speed.
+* 模拟当前Canvas对象缺少的虚线笔划，接近原生绘图速度。
 * Most blend modes known from Illustrator and Photoshop supported through emulation in JavaScript: multiply, screen, overlay, soft-light, hard-light, color-dodge, color-burn, darken, lighten, difference, exclusion, hue, saturation, luminosity, color, add, subtract, average & negation.
 
 Read our tutorials to learn more about the features of Paper.js.
