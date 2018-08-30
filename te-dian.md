@@ -69,6 +69,19 @@ Paper.js 你可以通过两种方式与键盘交互：监听按键事件并响�
 
 在[键盘互动](http://paperjs.org/tutorials/interaction/keyboard-interaction/)教程中可以了解更多有关键盘互动的内容。
 
+```js
+function onKeyDown(event) {
+	// 当用户按下某一个键时执行代码
+}
+
+function onMouseDrag(event) {
+	if (Key.isDown('space')) {
+		// Do something if the space bar is pressed
+		// while dragging:
+	}
+}
+```
+
 # SVG 导入/导出
 
 # 光栅图像和颜色平均
