@@ -16,16 +16,12 @@ Paper.js 由 [Jürg Lehni](http://lehni.org/) 和 [Jonathan Puckey](http://jonat
 
 # 入门
 
-
-
 * 首先，可以看看一些[示例](http://paperjs.org/examples/)。
 * [下载](http://paperjs.org/download/) Paper.js，或者从[Github 仓库](http://github.com/paperjs/paper.js)查看最新版本。
-* 想学习Paper.js？ 从我们的[教程](http://paperjs.org/tutorials/)开始。
+* 想学习 Paper.js？ 从我们的[教程](http://paperjs.org/tutorials/)开始。
 * If you have any questions or comments, please join the [mailing list](http://groups.google.com/group/paperjs)。
 * To stay up to date, [follow us on Twitter](http://twitter.com/paperjs)。
   .
-
-
 
 
 
