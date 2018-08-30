@@ -37,7 +37,7 @@ Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 * 模拟当前Canvas对象缺少的虚线笔划，接近原生绘图速度。
 * 通过 JavaScript 的模拟支持 Illustrator 和 Photoshop 中的大多数混合模式：正片叠底，滤色，叠加，柔光，强光，颜色减淡，颜色加深，变暗，变亮，差值，排除，色相，饱和度，亮度， 颜色，增加，减去，平均和反相。
 
-阅读我们的教程以了解更多有关 Paper.js 的信息。
+阅读我们的[教程](http://paperjs.org/tutorials/)以了解更多有关 Paper.js 的信息。
 
 # 浏览器支持
 
