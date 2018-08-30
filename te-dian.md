@@ -31,7 +31,7 @@ var secondPath = new Path.Circle({
 });
 ```
 
-在[文档层次结构](http://www.scriptographer.org/tutorials/document-items/document-hierarchy/)教程中可以了解更多有关文档对象模型的内容。
+在[文档层次结构](http://www.scriptographer.org/tutorials/document-items/document-hierarchy/)教程中可以了解更多相关内容。
 
 # 路径和线段
 
@@ -39,13 +39,13 @@ Paper.js 可以非常轻松地创建路径并为其添加线段。 添加后，�
 
 Paper.js中，路径由一系列由曲线连接的线段表示。 一个线段由一个点和两个柄组成，定义了曲线的位置和方向。
 
-在[使用路径项目](http://www.scriptographer.org/tutorials/paths/working-with-path-items/)教程中可以了解更多有关路径和段的内容。
+在[使用路径项目](http://www.scriptographer.org/tutorials/paths/working-with-path-items/)教程中可以了解更多有关内容。
 
 # 鼠标互动
 
 Paper.js 可以为通过鼠标（或触摸屏）产生的不同行为提供鼠标处理程序。 您可以使用这些处理程序生成不同类型的功能，这些功能可以不同的方式来响应鼠标交互和移动。 你只需在 Paperscript 代码中定义处理函数，这时只要用户与画布交互，它们就会被 Paper.js 调用。
 
-在[创建鼠标工具](http://scriptographer.org/tutorials/interaction/creating-mouse-tools/)教程中可以了解更多有关鼠标处理程序的内容。
+在[创建鼠标工具](http://scriptographer.org/tutorials/interaction/creating-mouse-tools/)教程中可以了解更多相关内容。
 
 ```js
 function onMouseDown(event) {
@@ -61,13 +61,13 @@ function onMouseUp(event) {
 }
 ```
 
-传递给事件处理程序的事件对象包括许多描述鼠标移动和位置的方便属性。 在[鼠标事件](http://scriptographer.org/tutorials/interaction/mouse-tool-events/)教程中可以了解更多有关鼠标事件的内容。
+传递给事件处理程序的事件对象包括许多描述鼠标移动和位置的方便属性。 在[鼠标事件](http://scriptographer.org/tutorials/interaction/mouse-tool-events/)教程中可以了解更多相关内容。
 
 # 键盘互动
 
 Paper.js 你可以通过两种方式与键盘交互：监听按键事件并响应这些事件，或随时检查给定按键的状态，以检查是否按下了键。
 
-在[键盘互动](http://paperjs.org/tutorials/interaction/keyboard-interaction/)教程中可以了解更多有关键盘互动的内容。
+在[键盘互动](http://paperjs.org/tutorials/interaction/keyboard-interaction/)教程中可以了解更多相关内容。
 
 ```js
 function onKeyDown(event) {
@@ -95,7 +95,7 @@ Paper.js提供了非常方便的方法来将矢量图形导入和导出为SVG。
 
 将图片置入你的项目中，使用该图片的像素颜色或者其顶部的路径像素的平均颜色。
 
-在[图片](http://paperjs.org/tutorials/images/)教程中可以了解更多有关图片的内容。
+在[图片](http://paperjs.org/tutorials/images/)教程中可以了解更多相关内容。
 
 # 标记
 
@@ -134,7 +134,7 @@ Vector几何是 Paper.js 中的一等公民。 在学习编写脚本的同时，
 
 在构建 [Scriptographer](http://scriptographer.org/) 时，我们发现矢量几何是一种处理位置、运动和路径的强大方法。一旦理解它，你会发现它比直接使用坐标系的x值和y值更加直观和灵活，就像那些视觉导向的编程环境那样。
 
-在[矢量几何](http://www.scriptographer.org/tutorials/geometry/vector-geometry/)教程中可以了解更多有关内容。
+在[矢量几何](http://www.scriptographer.org/tutorials/geometry/vector-geometry/)教程中可以了解更多相关内容。
 
 # 数学运算
 
