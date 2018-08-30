@@ -21,9 +21,8 @@ Paper.js 由 [Jürg Lehni](http://lehni.org/) 和 [Jonathan Puckey](http://jonat
 * 想学习 Paper.js？ 从我们的[教程](http://paperjs.org/tutorials/)开始。
 * 如果你有任何的问题或意见，可以加入我们的[邮件列表](http://groups.google.com/group/paperjs)。
 * 想及时了解最新信息，可以关注我们的[Twitter](http://twitter.com/paperjs)。
-  .
 
 # 总览
 
-
+Paper.js不仅仅是Canvas的包装器，它提供了更多功能：
 
