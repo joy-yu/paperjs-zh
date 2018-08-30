@@ -11,5 +11,7 @@ Paper.js是一个年轻的库，但会计划提供更多功能。 虽然很多�
 * 图形项目的[命中测试](http://scriptographer.org/tutorials/document-items/hit-tests/)，并为它们添加鼠标事件处理，以实现简单而强大的交互性。
 * 在 [Node.js](http://nodejs.org/) 中运行 Paper.js。
 
+## 即将完成
+
 
 
