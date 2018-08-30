@@ -23,7 +23,7 @@ var path = new Path.Circle({
 // 创建一个新图层并激活
 var secondLayer = new Layer();
 
-// 第二个路径作为第二层的子项添加:
+// 第二个路径作为第二层的子项添加
 var secondPath = new Path.Circle({
     center: [120, 50],
     radius: 35,
