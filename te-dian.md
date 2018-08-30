@@ -105,6 +105,29 @@ Paper.js提供了非常方便的方法来将矢量图形导入和导出为SVG。
 
 当你在代码中选择物体或路径的段点和段柄时，Paper.js 会在项目顶部绘制它们的可视轮廓。 这对于调试非常有用，这样可以查看路径构造，路径曲线的位置，各个分段点以及符号和栅格项的边界框：
 
+```js
+var circle = new Path.Circle({
+	center: [160, 80],
+	radius: 50
+});
+
+// 选择路径的第二个线段点
+circle.segments[1].selected = true;
+
+// 选择路径的第三个线段点
+circle.segments[2].selected = true;
+
+// Create a circle path 140pt to the right:
+var circle2 = new Path.Circle({
+	center: circle.position + [140, 0],
+	radius: 50,
+	fillColor: 'red'
+});
+
+// Select it:
+circle2.selected = true;
+```
+
 # 矢量几何
 
 # 数学运算
