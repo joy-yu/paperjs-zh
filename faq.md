@@ -26,5 +26,5 @@
 
 ### 可以在不编写 PaperScript 的情况下使用 Paper.js 吗？
 
-当然可以，但这样你会失去一些优势，比如：自动规划作用域和运算符重载，但与此同时，这样调试起来会更方便，性能也稍有提升。教程中 [直接使用 Javascript](http://paperjs.org/tutorials/getting-started/using-javascript-directly/) 描述了这部分内容。
+当然可以，但这样你会失去一些优势，比如：自动规划作用域和运算符重载，但与此同时，这样调试起来会更方便，性能也稍有提升。教程中 [直接使用 Javascript](http://paperjs.org/tutorials/getting-started/using-javascript-directly/) 描述了这部分内容。两者也可以混合使用，参考教程中 [PaperScript ](http://paperjs.org/tutorials/getting-started/paperscript-interoperability/)[Interoperability](http://paperjs.org/tutorials/getting-started/paperscript-interoperability/)。
 
