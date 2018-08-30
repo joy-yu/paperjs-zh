@@ -16,3 +16,7 @@
 
 不用担心，所有 Paper.js 都在自己的作用域范围内编译并存放在全局 [paper](http://paperjs.org/reference/global#paper) 变量中。每个PaperScript 脚本都在自己的作用域范围内运行，执行时它们看上去是在全局作用域，但实际上是在 paper 对象中。 如果您选择不使用 PaperScript 而更喜欢纯JavaScript，那么，你将失去通过简单的数学运算符对 Point 和 Size 对象进行矢量数学运算的额外好处，并且你必须访问 paper 对象上的所有原型。 你可以选择调用 paper.install\(window\) 来污染全局作用域，将所有 Paper.js 原型注入其中，并且无需通过 paper 对象访问所有内容。
 
+### 竞争力如何？是不是已经有很多关于Canvas的库了？
+
+
+
