@@ -88,19 +88,19 @@ window.onload = function() {
 }
 ```
 
-如果觉得污染全局作用域不是很好的选择，那么第二种策略是通过使用可怕的`with()`语句来绕过它。 这是Paper.js 在内部应用的一个小技巧，用来在它自己的 PaperScope 对象中确定 PaperScript 的作用域： 
+如果觉得污染全局作用域不是很好的选择，那么第二种策略是通过使用可怕的`with()`语句来绕过它。 这是Paper.js 在内部应用的一个小技巧，用来在它自己的 PaperScope 对象中确定 PaperScript 的作用域：
 
-```
+```js
 window.onload = function() {
-	paper.setup('myCanvas');
-	with (paper) {
-		var path = new Path();
-		path.strokeColor = 'black';
-		var start = new Point(100, 100);
-		path.moveTo(start);
-		path.lineTo(start.add([ 200, -50 ]));
-		view.draw();
-	}
+    paper.setup('myCanvas');
+    with (paper) {
+        var path = new Path();
+        path.strokeColor = 'black';
+        var start = new Point(100, 100);
+        path.moveTo(start);
+        path.lineTo(start.add([ 200, -50 ]));
+        view.draw();
+    }
 }
 ```
 
