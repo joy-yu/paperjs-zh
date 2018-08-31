@@ -10,6 +10,8 @@
     * [使用 Paper.js](jiao-cheng/ru-men/shi-yong-paper-js.md)
     * [直接使用 JavaScript](jiao-cheng/ru-men/zhi-jie-shi-yong-javascript.md)
     * [PaperScript 互用性](jiao-cheng/ru-men/paperscript-hu-yong-xing.md)
+  * [几何](jiao-cheng/ji-he.md)
+    * [点、尺寸和矩形](jiao-cheng/ji-he/dian-3001-chi-cun-he-ju-xing.md)
 * [引用](yin-yong.md)
 * [下载](xia-zai.md)
 
