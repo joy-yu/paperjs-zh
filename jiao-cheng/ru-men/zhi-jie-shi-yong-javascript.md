@@ -114,24 +114,28 @@ PaperScript 在声明为全局函数时会辨识几个特殊事件处理程序�
 <head>
 <script type="text/javascript" src="js/paper.js"></script>
 <script type="text/javascript">
-	paper.install(window);
-	window.onload = function() {
-		paper.setup('myCanvas');
-		var path = new Path.Rectangle([75, 75], [100, 100]);
-		path.strokeColor = 'black';
+    paper.install(window);
+    window.onload = function() {
+        paper.setup('myCanvas');
+        var path = new Path.Rectangle([75, 75], [100, 100]);
+        path.strokeColor = 'black';
 
-		view.onFrame = function(event) {
-			// 每一帧时，路径旋转3度:
-			path.rotate(3);
-		}
-	}
+        view.onFrame = function(event) {
+            // 每一帧时，路径旋转3度:
+            path.rotate(3);
+        }
+    }
 </script>
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+    <canvas id="myCanvas" resize></canvas>
 </body>
 </html>
 ```
+
+> **你知道吗？**
+>
+> 您可以在教程[创建动画](http://paperjs.org/tutorials/animation/creating-animations/)中阅读有关动画的更多信息。
 
 
 
