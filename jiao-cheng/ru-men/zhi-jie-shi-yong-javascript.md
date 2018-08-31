@@ -62,10 +62,14 @@
 > **请注意：**
 >
 > **教程** 和 **引用** 中的所有示例都假设你使用的是 PaperScript。 如果你直接使用 JavaScript，需要牢记这些差异。
-
+>
 > **请注意：**
 >
 > 在上面的代码中，我们使用 window.onload = handler 来获取 DOM 加载完毕时的回调。如果你正在使用诸如 jQuery 之类的框架，则可以使用 $\(document\).ready\(handler\) 来注册 DOM-Ready 事件，该事件在 onload 事件之前触发。
 
+### 作用域全局化
 
+通过 paper 对象访问所有的类和对象可能不太方便，因此这里有两种策略来规避它。
+
+最直接的方法是将 paper 对象的所有字段复制到全局范围。我们可以手动完成，如果只有一个 project，view 和 tool，这样很有效。 但是，如果有多个，对活动的（project，view 和 tool）的全局引用将不会保持最新状态。 幸运的是，我们有一种方法可以在内部执行一些JavaScript技巧，以便这些引用保持同步：paper.install（window）。 配备这个我们可以重写上面例子的代码：
 
