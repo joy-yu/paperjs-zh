@@ -61,5 +61,5 @@ PaperScript 的 &lt;script&gt; 标签支持以下这些属性：
 
 **src="URL"**：加载 PaperScript 代码的 URL。
 
-**canvas="ID"**：将 PaperScript 代码关联到指定 ID 的 canvas，并为其生成 Project 和 View 对象。 对于那些与验证有关的人，也支持data-paper-canvas =“ID”。
+**canvas="ID"**：将 PaperScript 代码关联到指定 ID 的 canvas，并为其生成 [Project](http://paperjs.org/reference/project) 和 [View](http://paperjs.org/reference/view) 对象。 对于那些与验证有关的人，也支持data-paper-canvas =“ID”。
 
