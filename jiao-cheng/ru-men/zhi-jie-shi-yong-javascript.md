@@ -57,7 +57,7 @@
 * 告诉 paper 对象为 canvas 设置 Project 和  View。 除了传递 canvas 对象，我们也可以将 canvas 元素的 ID 作为字符串传递给 paper 对象。 在 PaperScript 中，会通过`canvas ="ID"`属性自动绑定。
 * 通过 paper 对象访问所有 Paper.js 的类和对象，因为它们不再是全局的。
 * 在 Point 和 Size 对象上使用数学函数而不是运算符。
-* 最后绘制视图，因为现在只有在安装view.onFrame处理程序时才会自动处理。
+* 最后绘制视图，因为现在只有在安装 [view.onFrame](http://paperjs.org/reference/view#onframe) 处理程序时才会自动处理。
 
 
 
