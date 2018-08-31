@@ -53,7 +53,7 @@
 
 到此为止，如果我们将这个示例与 PaperScript 中编写的示例进行比较，我们会发现一些差异。 除了上面示例中的代码之外，我们还需要：
 
-* 在 DOM 渲染完毕时注册处理程序，在此之前我们无法使用 canvas。
+* 在 DOM 加载完毕时注册处理程序，在此之前我们无法使用 canvas。
 * 告诉 paper 对象为 canvas 设置 Project 和  View。 除了传递 canvas 对象，我们也可以将 canvas 元素的 ID 作为字符串传递给 paper 对象。 在 PaperScript 中，会通过`canvas ="ID"`属性自动绑定。
 * 通过 paper 对象访问所有 Paper.js 的类和对象，因为它们不再是全局的。
 * 在 Point 和 Size 对象上使用数学函数而不是运算符。
@@ -62,6 +62,10 @@
 > **请注意：**
 >
 > **教程** 和 **引用** 中的所有示例都假设你使用的是 PaperScript。 如果你直接使用 JavaScript，需要牢记这些差异。
+
+> **请注意：**
+>
+> 在上面的代码中，我们使用 window.onload = handler 来获取 DOM 加载完毕时的回调。如果你正在使用诸如 jQuery 之类的框架，则可以使用 $\(document\).ready\(handler\) 来注册 DOM-Ready 事件，该事件在 onload 事件之前触发。
 
 
 
