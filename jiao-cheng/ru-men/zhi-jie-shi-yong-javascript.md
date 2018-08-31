@@ -14,39 +14,39 @@
 
 直接使用 JavaScript 时，大多数情况下，只需要一个作用域即可。 在这个作用域内，可以通过 [new Project\(\)](http://paperjs.org/reference/project#project) 和 [new View\(canvas\)](http://paperjs.org/reference/view#view-canvas) 构造函数创建多个项目或视图。
 
-最简单的方法是使用现有的纸质对象，并使用其paperScope.setup（canvas）方法为我们初始化一个空项目和一个视图。 我们重用了Working with Paper.js中的示例，以便了解直接使用JavaScript时还需要什么：
+最简单的方法是使用现有的 [paper](http://paperjs.org/reference/global#paper) 对象，并使用它的 [paperScope.setup\(canvas\)](http://paperjs.org/reference/paperscope#setup-canvas) 方法为我们初始化空项目和视图。 我们复用了[使用 Paper.js](http://paperjs.org/tutorials/getting-started/working-with-paper-js/)中的示例，以便了解直接使用 JavaScript 时还需要什么：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Load the Paper.js library -->
+<!-- 加载 Paper.js 库 -->
 <script type="text/javascript" src="js/paper.js"></script>
-<!-- Define inlined JavaScript -->
+<!-- 定义内联 JavaScript -->
 <script type="text/javascript">
-	// Only executed our code once the DOM is ready.
-	window.onload = function() {
-		// Get a reference to the canvas object
-		var canvas = document.getElementById('myCanvas');
-		// Create an empty project and a view for the canvas:
-		paper.setup(canvas);
-		// Create a Paper.js Path to draw a line into it:
-		var path = new paper.Path();
-		// Give the stroke a color
-		path.strokeColor = 'black';
-		var start = new paper.Point(100, 100);
-		// Move to start and draw a line from there
-		path.moveTo(start);
-		// Note that the plus operator on Point objects does not work
-		// in JavaScript. Instead, we need to call the add() function:
-		path.lineTo(start.add([ 200, -50 ]));
-		// Draw the view now:
-		paper.view.draw();
-	}
+    // 当 DOM 渲染完毕时执行代码
+    window.onload = function() {
+        // 获取 canvas 对象的引用
+        var canvas = document.getElementById('myCanvas');
+        // 为 canvas 创建一个空项目和视图:
+        paper.setup(canvas);
+        // 创建一个 Paper.js 路径使能在其中画线:
+        var path = new paper.Path();
+        // Give the stroke a color
+        path.strokeColor = 'black';
+        var start = new paper.Point(100, 100);
+        // Move to start and draw a line from there
+        path.moveTo(start);
+        // Note that the plus operator on Point objects does not work
+        // in JavaScript. Instead, we need to call the add() function:
+        path.lineTo(start.add([ 200, -50 ]));
+        // Draw the view now:
+        paper.view.draw();
+    }
 </script>
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+    <canvas id="myCanvas" resize></canvas>
 </body>
 </html>
 ```
