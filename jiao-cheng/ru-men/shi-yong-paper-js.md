@@ -80,16 +80,16 @@ PaperScript 的 &lt;script&gt; 标签支持以下这些属性：
 ```js
 // 创建一个圆形路径，它的圆心在视图中心，半径为30:
 var path = new Path.Circle({
-	center: view.center,
-	radius: 30,
-	strokeColor: 'black'
+    center: view.center,
+    radius: 30,
+    strokeColor: 'black'
 });
 
 function onResize(event) {
-	// 当窗口调整，使路径重新居中:
-	path.position = view.center;
+    // 当窗口调整时，使路径重新居中:
+    path.position = view.center;
 }
 ```
 
-
+**hidpi="off"**：默认情况下，Paper.js 在 Hi-DPI（Retina）屏幕上渲染高分辨率 canvas 以匹配屏幕的原始分辨率，并为你显式地处理所有其他变换。如果你不想这么做，想降低内存占用或提高渲染性能，可以通过在 canvas 标签中设置hidpi =“off”来关闭它。 为了正确验证，data-paper-hidpi =“off”也可以正常工作。
 
