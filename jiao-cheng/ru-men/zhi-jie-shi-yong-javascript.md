@@ -12,5 +12,44 @@
 
 ### 设置作用域
 
+直接使用 JavaScript 时，大多数情况下，只需要一个作用域即可。 在这个作用域内，可以通过 [new Project\(\)](http://paperjs.org/reference/project#project) 和 [new View\(canvas\)](http://paperjs.org/reference/view#view-canvas) 构造函数创建多个项目或视图。
+
+最简单的方法是使用现有的纸质对象，并使用其paperScope.setup（canvas）方法为我们初始化一个空项目和一个视图。 我们重用了Working with Paper.js中的示例，以便了解直接使用JavaScript时还需要什么：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="js/paper.js"></script>
+<!-- Define inlined JavaScript -->
+<script type="text/javascript">
+	// Only executed our code once the DOM is ready.
+	window.onload = function() {
+		// Get a reference to the canvas object
+		var canvas = document.getElementById('myCanvas');
+		// Create an empty project and a view for the canvas:
+		paper.setup(canvas);
+		// Create a Paper.js Path to draw a line into it:
+		var path = new paper.Path();
+		// Give the stroke a color
+		path.strokeColor = 'black';
+		var start = new paper.Point(100, 100);
+		// Move to start and draw a line from there
+		path.moveTo(start);
+		// Note that the plus operator on Point objects does not work
+		// in JavaScript. Instead, we need to call the add() function:
+		path.lineTo(start.add([ 200, -50 ]));
+		// Draw the view now:
+		paper.view.draw();
+	}
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
+```
+
 
 
