@@ -1,4 +1,4 @@
-# 直接使用 JavaScript
+#  直接使用 JavaScript
 
 ### Paper.js 架构
 
@@ -30,15 +30,15 @@
         var canvas = document.getElementById('myCanvas');
         // 为 canvas 创建一个空项目和视图:
         paper.setup(canvas);
-        // 创建一个 Paper.js 路径使能在其中画线:
+        // 创建一个 Paper.js 路径 在其中绘制线条:
         var path = new paper.Path();
-        // Give the stroke a color
+        // 给画笔上色
         path.strokeColor = 'black';
         var start = new paper.Point(100, 100);
-        // Move to start and draw a line from there
+        // 移动到起始点并从那开始画线
         path.moveTo(start);
-        // Note that the plus operator on Point objects does not work
-        // in JavaScript. Instead, we need to call the add() function:
+        // 注意 Point 对象上的加法运算在 JavaScript 中不再有效
+        // 我们需要调用 add() 函数:
         path.lineTo(start.add([ 200, -50 ]));
         // Draw the view now:
         paper.view.draw();
