@@ -189,48 +189,48 @@ PaperScript 在声明为全局函数时会辨识几个特殊事件处理程序�
 <head>
 <script type="text/javascript" src="js/paper.js"></script>
 <script type="text/javascript">
-	paper.install(window);
-	// Keep global references to both tools, so the HTML
-	// links below can access them.
-	var tool1, tool2;
+    paper.install(window);
+    // 保持两个 tool 的全局引用，
+    // 以此让下面的 html 链接可以直接访问。
+    var tool1, tool2;
 
-	window.onload = function() {
-		paper.setup('myCanvas');
+    window.onload = function() {
+        paper.setup('myCanvas');
 
-		// Create two drawing tools.
-		// tool1 will draw straight lines,
-		// tool2 will draw clouds.
+        // 创建两个绘画工具。
+        // tool1 将画直线
+        // tool2 将画云
 
-		// Both share the mouseDown event:
-		var path;
-		function onMouseDown(event) {
-			path = new Path();
-			path.strokeColor = 'black';
-			path.add(event.point);
-		}
+        // 共享同一个mouseDown 事件:
+        var path;
+        function onMouseDown(event) {
+            path = new Path();
+            path.strokeColor = 'black';
+            path.add(event.point);
+        }
 
-		tool1 = new Tool();
-		tool1.onMouseDown = onMouseDown;
+        tool1 = new Tool();
+        tool1.onMouseDown = onMouseDown;
 
-		tool1.onMouseDrag = function(event) {
-			path.add(event.point);
-		}
+        tool1.onMouseDrag = function(event) {
+            path.add(event.point);
+        }
 
-		tool2 = new Tool();
-		tool2.minDistance = 20;
-		tool2.onMouseDown = onMouseDown;
+        tool2 = new Tool();
+        tool2.minDistance = 20;
+        tool2.onMouseDown = onMouseDown;
 
-		tool2.onMouseDrag = function(event) {
-			// Use the arcTo command to draw cloudy lines
-			path.arcTo(event.point);
-		}
-	}
+        tool2.onMouseDrag = function(event) {
+            // 使用 arcTo 命令画云的线
+            path.arcTo(event.point);
+        }
+    }
 </script>
 </head>
 <body>
     <a href="#" onclick="tool1.activate();">Lines</a>
     <a href="#" onclick="tool2.activate();">Clouds</a>
-	<canvas id="myCanvas" resize></canvas>
+    <canvas id="myCanvas" resize></canvas>
 </body>
 </html>
 ```
