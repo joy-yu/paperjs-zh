@@ -179,7 +179,61 @@ PaperScript 在声明为全局函数时会辨识几个特殊事件处理程序�
 >
 > 你可以在教程[创建鼠标工具](http://paperjs.org/tutorials/interaction/creating-mouse-tools/)中阅读有关鼠标工具的信息。
 
+### 多工具
 
+下面这个示例说明了创建多个绘图工具并使用一些简单的 UI 来在它们之间切换是多么简单，这里，只有两个 HTML 链接，以此激活一个工具或另一个：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/paper.js"></script>
+<script type="text/javascript">
+	paper.install(window);
+	// Keep global references to both tools, so the HTML
+	// links below can access them.
+	var tool1, tool2;
+
+	window.onload = function() {
+		paper.setup('myCanvas');
+
+		// Create two drawing tools.
+		// tool1 will draw straight lines,
+		// tool2 will draw clouds.
+
+		// Both share the mouseDown event:
+		var path;
+		function onMouseDown(event) {
+			path = new Path();
+			path.strokeColor = 'black';
+			path.add(event.point);
+		}
+
+		tool1 = new Tool();
+		tool1.onMouseDown = onMouseDown;
+
+		tool1.onMouseDrag = function(event) {
+			path.add(event.point);
+		}
+
+		tool2 = new Tool();
+		tool2.minDistance = 20;
+		tool2.onMouseDown = onMouseDown;
+
+		tool2.onMouseDrag = function(event) {
+			// Use the arcTo command to draw cloudy lines
+			path.arcTo(event.point);
+		}
+	}
+</script>
+</head>
+<body>
+    <a href="#" onclick="tool1.activate();">Lines</a>
+    <a href="#" onclick="tool2.activate();">Clouds</a>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
+```
 
 
 
