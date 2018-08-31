@@ -69,5 +69,27 @@ PaperScript 的 &lt;script&gt; 标签支持以下这些属性：
 >
 > 如果想让 PaperScript 与其他 PaperScript 或 JavaScript 代码进行通信，请参阅 [PaperScript 互用性](http://paperjs.org/tutorials/getting-started/paperscript-interoperability/)教程。
 
+### Canvas 配置
+
+我们可以通过向 canvas 标签添加属性，来配置 Paper.js：
+
+**resize="true"**：使 canvas 对象与浏览器窗口的宽高一样，并在用户调整浏览器窗口大小时自动调整 canvas 大小。 调整窗口大小时，global.view 的大小也会自动调整。如果你想验证，`data-paper-resize="true"`同样有效。
+
+你可以通过在代码中编写 onResize 处理函数来响应窗口的任何大小调整行为。 例如，假设你在视图的中心创建一个圆形路径，并且你希望它在调整大小后依旧居中：
+
+```js
+// 创建一个圆形路径，它的圆心在视图中心，半径为30:
+var path = new Path.Circle({
+	center: view.center,
+	radius: 30,
+	strokeColor: 'black'
+});
+
+function onResize(event) {
+	// 当窗口调整，使路径重新居中:
+	path.position = view.center;
+}
+```
+
 
 
