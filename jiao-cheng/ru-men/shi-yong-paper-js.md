@@ -63,11 +63,15 @@ PaperScript 的 &lt;script&gt; 标签支持以下这些属性：
 
 **canvas="ID"**：将 PaperScript 代码关联到指定 ID 的 canvas，并为其生成 [Project](http://paperjs.org/reference/project) 和 [View](http://paperjs.org/reference/view) 对象。 如果你想验证，`data-paper-canvas="ID"`同样有效。
 
-```
-请注意:
-当页面包含多个 PaperScript 时，每个脚本将在它自己的作用域范围内运行，而且无法访问在其他脚本中声明的对象和函数。
-要使 PaperScript 与其他 PaperScript 或 JavaScript 代码进行通信，请参阅 PaperScript 互操作性的教程。
-```
+> **请注意：**
+>
+> 当页面包含多个 PaperScript 时，每个脚本将在它自己的作用域范围内运行，而且无法访问在其他脚本中声明的对象和函数。
+>
+> 如果想让 PaperScript 与其他 PaperScript 或 JavaScript 代码进行通信，请参阅 [PaperScript 互用性](http://paperjs.org/tutorials/getting-started/paperscript-interoperability/)的教程。
+
+
+
+
 
 
 
