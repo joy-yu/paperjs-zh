@@ -1,4 +1,4 @@
-#  直接使用 JavaScript
+# 直接使用 JavaScript
 
 ### Paper.js 架构
 
@@ -40,7 +40,7 @@
         // 注意 Point 对象上的加法运算在 JavaScript 中不再有效
         // 我们需要调用 add() 函数:
         path.lineTo(start.add([ 200, -50 ]));
-        // Draw the view now:
+        // 绘制视图:
         paper.view.draw();
     }
 </script>
