@@ -104,5 +104,34 @@ window.onload = function() {
 }
 ```
 
+### 设置事件处理程序
+
+PaperScript 在声明为全局函数时会辨识几个特殊事件处理程序，而在 JavaScript 中，需要手动将这些处理程序配置在对应的对象上。 这两个处理程序是 [onFrame](http://paperjs.org/reference/view#onframe) 和 [onResize](http://paperjs.org/reference/view#onresize)，它们都属于 View 类。 如上例所示，如果我们使用 [paperScope.setup\(canvas\)](http://paperjs.org/reference/paperscope#setup-canvas) 函数，就会自动为我们创建 view。 所以我们要做的就是在现有的 view 对象上设置这些处理程序：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/paper.js"></script>
+<script type="text/javascript">
+	paper.install(window);
+	window.onload = function() {
+		paper.setup('myCanvas');
+		var path = new Path.Rectangle([75, 75], [100, 100]);
+		path.strokeColor = 'black';
+
+		view.onFrame = function(event) {
+			// 每一帧时，路径旋转3度:
+			path.rotate(3);
+		}
+	}
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
+```
+
 
 
