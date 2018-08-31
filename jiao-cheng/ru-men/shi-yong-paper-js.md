@@ -20,9 +20,9 @@ PaperScript 代码的加载方式与JavaScript中使用 &lt;script&gt;标签 加
 <head>
 <!-- 加载 Paper.js 库 -->
 <script type="text/javascript" src="js/paper.js"></script>
-<!-- 定义内联 PaperScript 将其与 myCanvas 相关联 -->
+<!-- 定义内联 PaperScript ，将其与 myCanvas 相关联 -->
 <script type="text/paperscript" canvas="myCanvas">
-    // 创建 Paper.js 路径以在其中绘制线条：
+    // 创建 Paper.js 路径，在其中绘制线条：
     var path = new Path();
     // 给笔画一种颜色
     path.strokeColor = 'black';
@@ -39,3 +39,24 @@ PaperScript 代码的加载方式与JavaScript中使用 &lt;script&gt;标签 加
 </body>
 </html>
 ```
+
+如果我们将内联代码复制到名为`js/myScript.js`的文件中，我们可以重写上面的示例来加载外部文件。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="js/paper.js"></script>
+<!-- Load external PaperScript and associate it with myCanvas -->
+<script type="text/paperscript" src="js/myScript.js" canvas="myCanvas">
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
+```
+
+
+
