@@ -20,7 +20,7 @@ PaperScript 代码的加载方式与JavaScript中使用 &lt;script&gt;标签 加
 <head>
 <!-- 加载 Paper.js 库 -->
 <script type="text/javascript" src="js/paper.js"></script>
-<!-- 定义内联 PaperScript ，将其与 myCanvas 相关联 -->
+<!-- 定义内联 PaperScript，将其与 myCanvas 相关联 -->
 <script type="text/paperscript" canvas="myCanvas">
     // 创建 Paper.js 路径，在其中绘制线条：
     var path = new Path();
@@ -46,17 +46,20 @@ PaperScript 代码的加载方式与JavaScript中使用 &lt;script&gt;标签 加
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Load the Paper.js library -->
+<!-- 加载 Paper.js 库 -->
 <script type="text/javascript" src="js/paper.js"></script>
-<!-- Load external PaperScript and associate it with myCanvas -->
-<script type="text/paperscript" src="js/myScript.js" canvas="myCanvas">
-</script>
+<!-- 加载外部 PaperScript，将其与 myCanvas 相关联 -->
+<script type="text/paperscript" src="js/myScript.js" canvas="myCanvas"></script>
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+    <canvas id="myCanvas" resize></canvas>
 </body>
 </html>
 ```
 
+PaperScript 的 &lt;script&gt; 标签支持以下这些属性：
 
+**src="URL"**：加载 PaperScript 代码的 URL。
+
+**canvas="ID"**：将 PaperScript 代码关联到指定 ID 的 canvas，并为其生成 Project 和 View 对象。 对于那些与验证有关的人，也支持data-paper-canvas =“ID”。
 
