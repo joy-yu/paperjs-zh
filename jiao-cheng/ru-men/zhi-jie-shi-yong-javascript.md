@@ -8,5 +8,5 @@
 
 每个作用域或上下文都包含一些描述其状态的对象，例如开放的 [projects](http://paperjs.org/reference/paperscope#projects) 列表，活动 [project](http://paperjs.org/reference/paperscope#project) 的引用，代表 canvas 元素的 [views](http://paperjs.org/reference/paperscope#views) 列表，当前活动的 [view](http://paperjs.org/reference/paperscope#views)，鼠标 [tools](http://paperjs.org/reference/paperscope#tools) 列表，当前活动的 [tool](http://paperjs.org/reference/paperscope#tool) 等。
 
-我们来解释一下作用域，项目，视图和工具之间的关系：每个作用域可以包含一个或多个项目，这些项目通过一个或多个视图显示（每个视图代表一个Paper.js画布）。视图与特定项目无关，但实际上渲染了可见区域内具有项目的所有可见项目。工具可以在任何视图中的任何项目上工作，只要它们属于同一范围。
+我们来解释一下作用域，项目，视图和工具之间的关系：每个作用域可以包含一个或多个项目，这些项目通过一个或多个视图显示（每个视图代表一个 Paper.js 画布）。视图与特定项目无关，但实际上渲染了可见区域内具有项目的所有可见项目。工具可以在任何视图中的任何项目上工作，只要它们属于同一范围。
 
