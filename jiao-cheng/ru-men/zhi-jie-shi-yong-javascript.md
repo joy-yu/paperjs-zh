@@ -71,5 +71,22 @@
 
 通过 paper 对象访问所有的类和对象可能不太方便，因此这里有两种策略来规避它。
 
-最直接的方法是将 paper 对象的所有字段复制到全局范围。我们可以手动完成，如果只有一个 project，view 和 tool，这样很有效。 但是，如果有多个，对活动的（project，view 和 tool）的全局引用将不会保持最新状态。 幸运的是，我们有一种方法可以在内部执行一些JavaScript技巧，以便这些引用保持同步：paper.install（window）。 配备这个我们可以重写上面例子的代码：
+最直接的方法是将 paper 对象的所有字段复制到全局范围。我们可以手动完成，如果只有一个 project，view 和 tool，这样很有效。 但是，如果有多个，对活动的（project，view 和 tool）的全局引用将不会保持最新状态。 幸运的是，我们可以在内部执行一些 JavaScript 技巧，以保持引用同步：paper.install\(window\)。 这样我们可以重写上面例子的代码：
+
+```js
+// 通过把 paper 注入到 window，使 paper 作用域全局化:
+paper.install(window);
+window.onload = function() {
+	// Setup directly from canvas id:
+	paper.setup('myCanvas');
+	var path = new Path();
+	path.strokeColor = 'black';
+	var start = new Point(100, 100);
+	path.moveTo(start);
+	path.lineTo(start.add([ 200, -50 ]));
+	view.draw();
+}
+```
+
+
 
