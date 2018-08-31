@@ -77,14 +77,14 @@
 // 通过把 paper 注入到 window，使 paper 作用域全局化:
 paper.install(window);
 window.onload = function() {
-	// Setup directly from canvas id:
-	paper.setup('myCanvas');
-	var path = new Path();
-	path.strokeColor = 'black';
-	var start = new Point(100, 100);
-	path.moveTo(start);
-	path.lineTo(start.add([ 200, -50 ]));
-	view.draw();
+    // 直接从 canvas 的 id 设置:
+    paper.setup('myCanvas');
+    var path = new Path();
+    path.strokeColor = 'black';
+    var start = new Point(100, 100);
+    path.moveTo(start);
+    path.lineTo(start.add([ 200, -50 ]));
+    view.draw();
 }
 ```
 
