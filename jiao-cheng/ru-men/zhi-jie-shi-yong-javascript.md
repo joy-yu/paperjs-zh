@@ -137,5 +137,45 @@ PaperScript 在声明为全局函数时会辨识几个特殊事件处理程序�
 >
 > 您可以在教程[创建动画](http://paperjs.org/tutorials/animation/creating-animations/)中阅读有关动画的更多信息。
 
+### 使用工具
+
+就像使用视图处理程序一样，PaperScript 通过使工具处理程序看起来像是全局的来简化和隐藏对 Tool 对象的处理，并且，如果存在这些处理程序如：onMouseDown，onMouseUp，onMouseDrag，onMouseMove 等等，则会为我们动态创建 tool。
+
+
+
+在JavaScript中，我们需要自己创建工具，我们需要在其上手动安装处理程序。 这种方法的优点是事物更加透明，并且处理多个工具不会令人感到意外。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/paper.js"></script>
+<script type="text/javascript">
+	paper.install(window);
+	window.onload = function() {
+		paper.setup('myCanvas');
+		// Create a simple drawing tool:
+		var tool = new Tool();
+		var path;
+
+		// Define a mousedown and mousedrag handler
+		tool.onMouseDown = function(event) {
+			path = new Path();
+			path.strokeColor = 'black';
+			path.add(event.point);
+		}
+
+		tool.onMouseDrag = function(event) {
+			path.add(event.point);
+		}
+	}
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
+```
+
 
 
