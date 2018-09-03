@@ -29,23 +29,23 @@ var point6 = point5 * new Point(3, 2);
 console.log(point6); // { x: 60, y: 60 }
 ```
 
-这些运算符与对象转换教程中描述的对象转换功能一起工作得很好，只要执行操作的对象是真正的基本类型：
+这些运算符完美诠释了[对象转换](http://paperjs.org/tutorials/geometry/object-conversion/)教程中描述的对象转换功能，只要执行操作的对象是真正的 Paper.js 的基本类型：
 
 ```js
 var point1 = new Point(10, 20);
 var point2 = point1 + { x: 100, y: 100 };
 console.log(point2); // { x: 110, y: 120 }
 
-// Adding size objects to points work too,
-// forcing them to be converted to a point first
+// 给 point 添加 size 对象同样生效
+// size 对象首先会被强制转化为 point 对象
 var point3 = point2 + new Size(50, 100);
 console.log(point3); // { x: 160, y: 220 }
 
-// And using the object notation for size works just as well:
+// 使用尺寸的对象表示法同样生效:
 var point4 = point3 + { width: 40, height: 80 };
 console.log(point4); // { x: 200, y: 300 }
 
-// How about adding a point in array notation instead?
+// 用数组表示法替代相加会怎么样？同样成功咯~
 var point5 = point4 + [100, 0];
 console.log(point5); // { x: 300, y: 300 }
 ```
