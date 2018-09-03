@@ -28,9 +28,9 @@ myPath.add(myPoint);
 
 ### 点
 
-Point 对象描述了二维坐标位置。 它有两个属性 x 和 y ，表示 x 和 y 的坐标位置。
+Point 对象描述了二维空间的坐标位置。 它有两个属性 x 和 y ，表示 x 和 y 的坐标位置。
 
-可以通过直接提供 x 和 y 的坐标来创建点对象，也可以直接省略，这样 x 和 y 坐标会被初始化为0。坐标属性也可以单独访问和修改。
+可以通过直接提供 x 和 y 的坐标来创建 Point 对象，也可以直接省略，这样 x 和 y 坐标会被初始化为0。坐标属性也可以单独访问和修改。
 
 这里我们创建了一个新点，不提供 x 和 y 的值，之后修改它们的值。`console.log()`函数用于将结果值记录到控制台。
 
@@ -73,6 +73,51 @@ console.log(secondPoint); // { x: 20, y: 20 }
 
 // Note that firstPoint has not changed:
 console.log(firstPoint); // { x: 20, y: 40 }
+```
+
+这与简单的变量引用不同，后者不会进行复制：
+
+```js
+var firstPoint = new Point(20, 40);
+var secondPoint = firstPoint;
+secondPoint.y = 20;
+console.log(secondPoint); // { x: 20, y: 20 }
+
+// 第一个点的位置也改变了:
+console.log(firstPoint); // { x: 20, y: 20 }
+```
+
+> **请注意：**
+>
+> Paper.js 中的所有基本类型都有这样的复制构造函数。一种更简单方法是在任何对象上调用`clone()`函数，这样可以产生对象副本，避免直接修改变量引用：
+
+```js
+var firstPoint = new Point(20, 40);
+var secondPoint = firstPoint.clone();
+```
+
+### 尺寸
+
+Size 对象描述的事二维空间中的抽象维度。它有两个属性 width 和 height ，表示尺寸的宽、高值。
+
+就像使用 Point 对象一样，可以通过直接提供 width 和 height 值来创建 Size 对象，也可以直接省略，这样 width 和 height 值会被初始化为0。宽度和高度属性也可以单独访问和修改。 例如，上一小节关于 Point 对象的相同步骤在这里可以使用 Size 对象替换执行。 关于 Point 对象的说明同样适用于 Size 对象，唯一的区别是属性名称的不同。
+
+```js
+var mySize = new Size();
+console.log(mySize); // { width: 0, height: 0 }
+
+mySize.width = 10;
+mySize.height = mySize.width + 10;
+console.log(mySize); // { width: 10, height: 20 }
+```
+
+```js
+var mySize = new Size();
+console.log(mySize); // { width: 0, height: 0 }
+
+mySize.width = 10;
+mySize.height = mySize.width + 10;
+console.log(mySize); // { width: 10, height: 20 }
 ```
 
 
