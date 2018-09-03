@@ -14,5 +14,49 @@
 
 ### 点和向量
 
+在许多方面，向量与点非常相似。 两者都由 x 和 y 坐标表示。 但是点描述绝对位置，但矢量表达一种相对信息：是从一个点到另一个点的表达。 下面是解释向量与点之间关系的分步示例。
+
+我们首先创建两个Point对象来描述文档中的两个绝对位置，由它们的 x y 坐标值定义：
+
+```js
+var point1 = new Point(50, 50);
+var point2 = new Point(110, 200);
+```
+
+![](/assets/import.png)
+
+---
+
+为了从 point1 到 point2，我们可以说我们需要向右移动60（在x方向上），向下移动150（在y方向上）。 这些值是从点 point2 减去点 point1 的 x 坐标值和 y 坐标值的结果：
+
+```js
+var x = point2.x - point1.x;
+// = 110 - 50 = 60
+var y = point2.y - point1.y;
+// = 200 - 50 = 150;
+```
+
+换句话说，通过将这两个值添加到 point1 坐标，最终得到了 point2。
+
+![](/assets/import2.png)
+
+---
+
+和使用这两个单独的值相比，使用向量作为它们的容器要容易得多。 要计算此向量，我们可以简单地从 point2 中减去 point1，而不是在上一步中减去两个单独的减法：
+
+```js
+var vector = point2 - point1;
+// = { x: 110, y: 200 } - { x: 50, y: 50 }
+// = { x: 60, y: 150 }
+```
+
+![](/assets/import3.png)
+
+> **请注意：**
+>
+> 你可以阅读[数学运算](http://paperjs.org/tutorials/geometry/mathematical-operations/#mathematical-operations)教程以了解有关数学运算的更多内容。
+>
+> 这个减法（矢量）的结果仍然是Point对象。 从技术上讲，点和矢量之间没有区别。 变化只是它们的含义：一个点是绝对的，一个矢量是相对的。
+
 
 
