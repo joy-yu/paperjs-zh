@@ -12,7 +12,7 @@
 
 此脚本是在[使用鼠标向量](http://paperjs.org/tutorials/interaction/working-with-mouse-vectors/)教程中一步步开发的，包含每行代码的相关说明。 在查看这样一个应用示例之前，了解下面概述的向量几何基本原理至关重要。
 
-### 点和矢量
+### 点和向量
 
 
 
