@@ -50,5 +50,39 @@ var point5 = point4 + [100, 0];
 console.log(point5); // { x: 300, y: 300 }
 ```
 
+### 数学函数
+
+Paper.js 提供了几种用于四舍五入 点 和 尺寸 值的数学函数：
+
+```js
+var point = new Point(1.2, 1.8);
+
+// 四舍五入：
+var rounded = point.round();
+console.log(rounded); // { x: 1, y: 2 }
+
+// 向上取整：
+var ceiled = point.ceil();
+console.log(ceiled); // { x: 2, y: 2 }
+
+// 向下取整：
+var floored = point.floor();
+console.log(floored); // { x: 1, y: 1 }
+```
+
+### 随机值
+
+使用`Point.random()`或`Size.random()`创建一个随机值的 point 或 size，每个属性值为0到1之间的随机值：
+
+```
+// 创建一个 point，它的 x 坐标在 0-50 之间
+// y 坐标值在 0-100 之间
+var point = new Point(50, 100) * Point.random();
+
+// 创建一个 size， 它的宽度在 0-50 之间
+// 高度在 0-100 之间
+var size = new Size(50, 100) * Size.random();
+```
+
 
 
