@@ -26,7 +26,7 @@ myPath.add(myPoint);
 >
 > 同样的，myPath 中“物理”上出现的段和名为 myPoint 的点不一样。myPoint 只是用于描述生成 myPath 第一段的坐标。如果段已经产生，修改 myPoint 不会改变这个段。
 
-### 点
+### 点（Point）
 
 Point 对象描述了二维空间的坐标位置。 它有两个属性 x 和 y ，表示 x 和 y 的坐标位置。
 
@@ -96,7 +96,7 @@ var firstPoint = new Point(20, 40);
 var secondPoint = firstPoint.clone();
 ```
 
-### 尺寸
+### 尺寸（Size）
 
 Size 对象描述的事二维空间中的抽象维度。它有两个属性 width 和 height ，表示尺寸的宽、高值。
 
@@ -118,6 +118,76 @@ console.log(mySize); // { width: 0, height: 0 }
 mySize.width = 10;
 mySize.height = mySize.width + 10;
 console.log(mySize); // { width: 10, height: 20 }
+```
+
+### 矩形（Rectangle）
+
+Rectangle 对象可以描述为 Point对象和 Size 对象的组合，描述二维空间的位置和尺寸。 因此它具有x，y，width，height 四个属性。 属性 x 和 y 描述矩形左上角的坐标，width 和 height 描述其尺寸。 此外，它还定义了 point 和 size 属性，可以以 Point和 Size 对象的形式访问这些值。 
+
+创建 Rectangle 对象有多种方式。 一种是将 Point 和 Size 对象传递给`new Rectangle(point,size)`构造函数：
+
+```js
+var topLeft = new Point(10, 20);
+var rectSize = new Size(200, 100);
+var rect = new Rectangle(topLeft, rectSize);
+console.log(rect); // { x: 10, y: 20, width: 200, height: 100 }
+console.log(rect.point); // { x: 10, y: 20 }
+console.log(rect.size); // { width: 200, height: 100 }
+```
+
+可以使用`new Rectangle(x,y,width,height)`构造函数创建相同的 Rectangle 对象：
+
+```js
+var rect = new Rectangle(10, 20, 200, 100);
+console.log(rect); // { x: 10, y: 20, width: 200, height: 100 }
+```
+
+第三种是使用`new Rectangle(point1,point2)`构造函数，它接收 Rectangle 对象的两个对角点。 不一定非得是左上角和右下角，构造函数可以通过这两点的计算生成矩形：
+
+```js
+var bottomLeft = new Point(10, 120);
+var topRight = new Point(210, 20);
+var rect = new Rectangle(bottomLeft, topRight);
+console.log(rect); // { x: 10, y: 20, width: 200, height: 100 }
+```
+
+> **请注意：**
+>
+> new 出来的基本类型不一定需要每次都放入命名的变量中。 我们可以直接将它们传递给 Rectangle 构造函数。
+>
+> ```js
+> var rect = new Rectangle(new Point(10, 120), new Point(210, 20));
+> ```
+
+### 矩形属性
+
+Rectangle 对象比 Point 和 Size 对象稍微复杂一些，同时提供了一系列额外的中心和对角点对象：center，topLeft，topRight，bottomLeft，bottomRight，leftCenter，topCenter，rightCenter 和 bottomCenter。
+
+创建矩形后，可以更改所有这些值，可以简便地指定矩形几何特性：
+
+```js
+// 创建一个矩形
+// 大小尺寸都初始化为0
+var rect = new Rectangle();
+console.log(rect); // { x: 0, y: 0, width: 0, height: 0 }
+
+// 现在我们可以定义它的大小...
+rect.size = new Size(100, 200);
+
+// 和它的中心点
+rect.center = new Point(100, 100);
+console.log(rect); // { x: 50, y: 0, width: 100, height: 200 }
+```
+
+作为定义矩形尺寸的替代数字方式，Rectangle 对象还提供了与x，y，width 和 height 相对的属性：left，top，right 和 bottom：
+
+```js
+var rect = new Rectangle();
+rect.left = 100;
+rect.right = 200;
+rect.bottom = 400;
+rect.top = 200;
+console.log(rect); // { x: 100, y: 200, width: 100, height: 200 }
 ```
 
 
