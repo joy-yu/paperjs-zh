@@ -24,9 +24,66 @@ myPath.add(myPoint);
 
 > **请注意：**
 >
-> 同样的，myPath 中的“物理”上出现的段和名为 myPoint 的点不一样。myPoint 只是用于描述生成 myPath 第一段的坐标。如果段已经产生，修改 myPoint 不会改变这个段。
+> 同样的，myPath 中“物理”上出现的段和名为 myPoint 的点不一样。myPoint 只是用于描述生成 myPath 第一段的坐标。如果段已经产生，修改 myPoint 不会改变这个段。
 
 ### 点
+
+Point 对象描述了二维坐标位置。 它有两个属性 x 和 y ，表示 x 和 y 的坐标位置。
+
+可以通过直接提供 x 和 y 的坐标来创建点对象，也可以直接省略，这样 x 和 y 坐标会被初始化为0。坐标属性也可以单独访问和修改。
+
+这里我们创建了一个新点，不提供 x 和 y 的值，之后修改它们的值。`console.log()`函数用于将结果值记录到控制台。
+
+```
+var myPoint = new Point();
+console.log(myPoint); // { x: 0, y: 0 }
+
+// 现在我们改变 x 坐标值为 10...
+myPoint.x = 10;
+
+// ...y 坐标值为 x + 10
+myPoint.y = myPoint.x + 10;
+console.log(myPoint); // { x: 10, y: 20 }
+```
+
+> **你知道吗？**
+>
+> `console.log()`函数将文本发送到浏览器的控制台，这对调试脚本非常有用。
+
+这里，我们创建一个新点并定义坐标位置，然后进行修改。
+
+```
+var myPoint = new Point(20, 40);
+console.log(myPoint); // { x: 20, y: 40 }
+
+// 现在我们将 x 坐标位置扩大两倍
+myPoint.x = myPoint.x * 2;
+console.log(myPoint); // { x: 40, y: 40 }
+```
+
+创建 point 对象的另一种方法是将现有点传递给构造函数，新点将成为副本。 更改新点不会修改原来的点：
+
+```
+var firstPoint = new Point(20, 40);
+var secondPoint = new Point(firstPoint);
+console.log(secondPoint); // { x: 20, y: 40 }
+
+secondPoint.y = 20;
+console.log(secondPoint); // { x: 20, y: 20 }
+
+// Note that firstPoint has not changed:
+console.log(firstPoint); // { x: 20, y: 40 }
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
