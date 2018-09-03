@@ -34,7 +34,7 @@ Point 对象描述了二维坐标位置。 它有两个属性 x 和 y ，表示 
 
 这里我们创建了一个新点，不提供 x 和 y 的值，之后修改它们的值。`console.log()`函数用于将结果值记录到控制台。
 
-```
+```js
 var myPoint = new Point();
 console.log(myPoint); // { x: 0, y: 0 }
 
@@ -52,7 +52,7 @@ console.log(myPoint); // { x: 10, y: 20 }
 
 这里，我们创建一个新点并定义坐标位置，然后进行修改。
 
-```
+```js
 var myPoint = new Point(20, 40);
 console.log(myPoint); // { x: 20, y: 40 }
 
@@ -63,7 +63,7 @@ console.log(myPoint); // { x: 40, y: 40 }
 
 创建 point 对象的另一种方法是将现有点传递给构造函数，新点将成为副本。 更改新点不会修改原来的点：
 
-```
+```js
 var firstPoint = new Point(20, 40);
 var secondPoint = new Point(firstPoint);
 console.log(secondPoint); // { x: 20, y: 40 }
@@ -74,16 +74,6 @@ console.log(secondPoint); // { x: 20, y: 20 }
 // Note that firstPoint has not changed:
 console.log(firstPoint); // { x: 20, y: 40 }
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
