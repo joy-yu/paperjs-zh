@@ -18,6 +18,8 @@
   * [路径](jiao-cheng/lu-jing.md)
     * [使用路径项](jiao-cheng/lu-jing/shi-yong-lu-jing-xiang.md)
     * [创建预定义的形状](jiao-cheng/lu-jing/chuang-jian-yu-ding-yi-de-xing-zhuang.md)
+    * [使用颜色和样式](jiao-cheng/lu-jing/shi-yong-yan-se-he-yang-shi.md)
+    * [平滑，简化和展平](jiao-cheng/lu-jing/ping-hua-ff0c-jian-hua-he-zhan-ping.md)
 * [引用](yin-yong.md)
 * [下载](xia-zai.md)
 
