@@ -15,6 +15,8 @@
     * [对象转换](jiao-cheng/ji-he/dui-xiang-zhuan-huan.md)
     * [数学运算](jiao-cheng/ji-he/shu-xue-yun-suan.md)
     * [向量几何](jiao-cheng/ji-he/shi-liang-ji-he.md)
+  * [路径](jiao-cheng/lu-jing.md)
+    * [使用路径项](jiao-cheng/lu-jing/shi-yong-lu-jing-xiang.md)
 * [引用](yin-yong.md)
 * [下载](xia-zai.md)
 
