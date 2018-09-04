@@ -11,20 +11,20 @@ Paper.js 中你能以两种方式与键盘进行交互：你可以监听按键�
 ```js
 // 在视图中心创建一个居中的文本项：
 var text = new PointText({
-	point: view.center,
-	content: 'Click here to focus and then press some keys.',
-	justification: 'center',
-	fontSize: 15
+    point: view.center,
+    content: 'Click here to focus and then press some keys.',
+    justification: 'center',
+    fontSize: 15
 });
 
 function onKeyDown(event) {
-	// 当键被按下，设置文本项的内容：
-	text.content = 'The ' + event.key + ' key was pressed!';
+    // 当键被按下，设置文本项的内容：
+    text.content = 'The ' + event.key + ' key was pressed!';
 }
 
 function onKeyUp(event) {
-	// 当键释放，设置文本项的内容：
-	text.content = 'The ' + event.key + ' key was released!';
+    // 当键释放，设置文本项的内容：
+    text.content = 'The ' + event.key + ' key was released!';
 }
 ```
 
@@ -51,20 +51,20 @@ event.type：按键事件的类型，'keydown' 或 'keyup'。
 ```js
 var path;
 function onMouseDown(event) {
-	path = new Path();
-	path.strokeColor = 'black';
-	path.add(event.point);
+    path = new Path();
+    path.strokeColor = 'black';
+    path.add(event.point);
 }
 
 function onMouseDrag(event) {
-	if(Key.isDown('a')) {
-		// 如果 'a' 键按下，
-		// 移动最后一个段点到鼠标的位置：
-		path.lastSegment.point = event.point;
-	} else {
-		// 如果键没被按下，在鼠标的位置添加一个段：
-		path.add(event.point);
-	}
+    if(Key.isDown('a')) {
+        // 如果 'a' 键按下，
+        // 移动最后一个段点到鼠标的位置：
+        path.lastSegment.point = event.point;
+    } else {
+        // 如果键没被按下，在鼠标的位置添加一个段：
+        path.add(event.point);
+    }
 }
 ```
 
@@ -76,9 +76,9 @@ event.modifiers 属性是一个对象，提供不同辅助按键的布尔值。 
 
 ```js
 function onMouseDrag(event) {
-	if (event.modifiers.shift) {
-		// 当 shift 键按下时执行某些操作
-	}
+    if (event.modifiers.shift) {
+        // 当 shift 键按下时执行某些操作
+    }
 }
 ```
 
@@ -87,20 +87,20 @@ function onMouseDrag(event) {
 ```js
 var path;
 function onMouseDown(event) {
-	path = new Path();
-	path.strokeColor = 'black';
-	path.add(event.point, event.point);
+    path = new Path();
+    path.strokeColor = 'black';
+    path.add(event.point, event.point);
 }
 
 function onMouseDrag(event) {
-	if(event.modifiers.shift) {
-		// 如果 'shift' 键按下，
-		// 移动最后一个段点到鼠标的位置：
-		path.lastSegment.point = event.point;
-	} else {
-		// 如果键没被按下，在鼠标的位置添加一个段：
-		path.add(event.point);
-	}
+    if(event.modifiers.shift) {
+        // 如果 'shift' 键按下，
+        // 移动最后一个段点到鼠标的位置：
+        path.lastSegment.point = event.point;
+    } else {
+        // 如果键没被按下，在鼠标的位置添加一个段：
+        path.add(event.point);
+    }
 }
 ```
 
@@ -122,22 +122,22 @@ path.strokeColor = 'black';
 path.add(position);
 
 function onKeyDown(event) {
-	if(event.key == 'a') {
-		position.x -= step;
-	}
+    if(event.key == 'a') {
+        position.x -= step;
+    }
 
-	if(event.key == 'd') {
-		position.x += step;
-	}
+    if(event.key == 'd') {
+        position.x += step;
+    }
 
-	if(event.key == 'w') {
-		position.y -= step;
-	}
+    if(event.key == 'w') {
+        position.y -= step;
+    }
 
-	if(event.key == 's') {
-		position.y += step;
-	}
-	path.add(position);
+    if(event.key == 's') {
+        position.y += step;
+    }
+    path.add(position);
 }
 ```
 
