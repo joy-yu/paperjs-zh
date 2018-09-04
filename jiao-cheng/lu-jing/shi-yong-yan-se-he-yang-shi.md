@@ -8,8 +8,8 @@
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]],
-	selected: true
+    segments: [[40, 115], [80, 180], [200, 20]],
+    selected: true
 });
 ```
 
@@ -27,7 +27,7 @@ var myPath = new Path({
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]]
+    segments: [[40, 115], [80, 180], [200, 20]]
 });
 
 myPath.strokeColor = '#ff0000'; // 红色
@@ -41,7 +41,7 @@ myPath.strokeColor = '#ff0000'; // 红色
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]]
+    segments: [[40, 115], [80, 180], [200, 20]]
 });
 
 myPath.strokeColor = new Color(0.5, 0, 0.5);
@@ -59,8 +59,8 @@ myPath.strokeColor = new Color(0.5, 0, 0.5);
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]],
-	selected: true
+    segments: [[40, 115], [80, 180], [200, 20]],
+    selected: true
 });
 
 myPath.fillColor = '#ff0000';
@@ -76,7 +76,7 @@ myPath.fillColor = '#ff0000';
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]]
+    segments: [[40, 115], [80, 180], [200, 20]]
 });
 myPath.strokeColor = '#ff0000';
 myPath.strokeWidth = 10;
@@ -90,8 +90,8 @@ myPath.strokeWidth = 10;
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]],
-	selected: true
+    segments: [[40, 115], [80, 180], [200, 20]],
+    selected: true
 });
 
 myPath.strokeColor = '#ff0000';
@@ -108,8 +108,8 @@ myPath.strokeCap = 'round';
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]],
-	selected: true
+    segments: [[40, 115], [80, 180], [200, 20]],
+    selected: true
 });
 
 myPath.strokeColor = '#ff0000';
@@ -126,8 +126,8 @@ myPath.strokeJoin = 'round';
 
 ```js
 var myPath = new Path({
-	segments: [[40, 115], [80, 180], [200, 20]],
-	selected: true
+    segments: [[40, 115], [80, 180], [200, 20]],
+    selected: true
 });
 
 myPath.strokeColor = '#ff0000';
@@ -145,8 +145,8 @@ myPath.dashArray = [10, 12];
 
 ```js
 var firstPath = new Path.Circle({
-	center: [80, 50],
-	radius: 35
+    center: [80, 50],
+    radius: 35
 });
 
 firstPath.strokeColor = '#ff0000';
@@ -154,8 +154,8 @@ firstPath.fillColor = 'blue';
 
 // secondPath 暂时没有笔划颜色
 var secondPath = new Path.Circle({
-	center: [160, 50],
-	radius: 35
+    center: [160, 50],
+    radius: 35
 });
 
 // 给 secondPath 应用 firstPath 的样式：
@@ -170,14 +170,14 @@ item.style 属性也可以一次性设置多个样式属性。
 
 ```js
 var myStyle = {
-	strokeColor: '#00ffff',
-	fillColor: '#000000',
-	strokeWidth: 50
+    strokeColor: '#00ffff',
+    fillColor: '#000000',
+    strokeWidth: 50
 };
 
 var myCircle = new Path.Circle({
-	center: [100, 100],
-	radius: 50
+    center: [100, 100],
+    radius: 50
 });
 myCircle.style = myStyle;
 ```
@@ -190,8 +190,8 @@ myCircle.style = myStyle;
 
 ```js
 var path = new Path.Circle({
-	center: new Point(50, 50),
-	radius: 50
+    center: new Point(50, 50),
+    radius: 50
 });
 path.fillColor = 'red';
 
@@ -203,32 +203,32 @@ path.fillColor = null;
 
 ```js
 var path = new Path.Circle({
-	center: [50, 50],
-	radius: 50
+    center: [50, 50],
+    radius: 50
 });
 path.style = null;
 ```
 
 ### 使用当前项目的风格
 
-正如我之前提到的，所有新创建的项都会自动接受 Illustrator 接口中定义的当前活动路径样式属性。 我们也可以使用 currentStyle，通过代码来更改这些样式。
+正如我之前提到的，所有新创建的项都会自动使用 Illustrator 接口中定义的当前活动路径样式属性。 我们也可以使用 currentStyle，通过代码来更改这些样式。
 
 currentStyle 是项目的 PathStyle 对象，包含当前活动的样式属性，如 fillColor 和 strokeColor。
 
-以下示例更改项目的当前样式，然后创建继承该样式的路径。 然后它更改 strokeWidth 和 fillColor 并创建另一个路径。
+以下示例更改项目的当前样式，然后创建继承了该样式的路径。 然后更改项目样式的 strokeWidth 和 fillColor 并创建另一个路径。
 
 ```js
 // 更改项目当前的样式：
 project.currentStyle = {
-	strokeColor: '#000000',
-	fillColor: '#ff0000',
-	strokeWidth: 3
+    strokeColor: '#000000',
+    fillColor: '#ff0000',
+    strokeWidth: 3
 };
 
 // 路径会继承刚刚设置的样式：
 var firstPath = new Path.Circle({
-	center: [100, 100],
-	radius: 50
+    center: [100, 100],
+    radius: 50
 });
 
 // 改变项目的当前笔划宽度和填充颜色：
@@ -237,8 +237,8 @@ project.currentStyle.fillColor = 'green';
 
 // 这个路径有 8pt 宽度的笔划和绿色的填充色：
 var secondPath = new Path.Circle({
-	center: [250, 100],
-	radius: 50
+    center: [250, 100],
+    radius: 50
 });
 ```
 
