@@ -21,10 +21,10 @@
     * [使用颜色和样式](jiao-cheng/lu-jing/shi-yong-yan-se-he-yang-shi.md)
     * [平滑，简化和展平](jiao-cheng/lu-jing/ping-hua-ff0c-jian-hua-he-zhan-ping.md)
   * [交互](jiao-cheng/jiao-hu.md)
-    * 创建鼠标工具
+    * [创建鼠标工具](jiao-cheng/jiao-hu/chuang-jian-shu-biao-gong-ju.md)
     * 鼠标工具事件
     * 使用鼠标向量
-    * 键盘交互
+    * [键盘交互](jiao-cheng/jiao-hu/jian-pan-jiao-hu.md)
 * [引用](yin-yong.md)
 * [下载](xia-zai.md)
 
